@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.app.fr:8080$ [NC]
+RewriteRule ^(.*)$ http://app.fr:8080/$1 [R=301,L]
